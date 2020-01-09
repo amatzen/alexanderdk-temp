@@ -1,0 +1,114 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: rgba(210,240,255, 1);
+    background-image: 
+        linear-gradient(
+            rgba(255,255,255, .2),
+            rgba(255,255,255, .8)
+        ),
+        url('images/joshua-sortino-71vAb1FXB6g-unsplash.webp');
+    background-size: cover;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacer {
+    height: 25px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(230,230,230, 1);
+    color: rgba(0,0,0, 1);
+    padding: 1rem;
+    border-radius: 3pt;
+
+    font-size: 14pt;
+    font-weight: 600;
+
+    &.cta {
+        background-color: rgba(40,140,230, 1);
+        color: rgba(255,255,255, 1)
+        
+    }
+    
+    &.cta:hover {
+        background-color: lighten(
+            rgba(40,140,230, 1),
+            5%
+        );
+    }
+
+}
+
+.container {
+    text-align: center;
+
+    h1 {
+        font-family: 'basic-sans', 'Basic Sans', sans-serif;
+        font-size: 48pt;
+        margin: 0;
+    }
+
+    p.lead {
+        font-size: 20pt;
+        margin-top: 0;
+        color: rgba(0,0,0,.75);
+    }
+
+    .social-media {
+       display: flex;
+       justify-content: center;
+       padding-left: 0;
+       
+       li {
+           list-style-type: none;
+           display: block;
+           padding: 1rem;
+
+           a {
+               color: rgba(40,140,230, 1);
+               text-decoration: none;
+
+               &:hover {
+                    color: lighten(
+                        rgba(40,140,230, 1),
+                        5%
+                    );
+                }
+
+                svg {
+                    height: 42px;
+                    fill: rgba(40,140,230, 1);
+
+                    &:hover {
+                        fill: lighten(
+                            rgba(40,140,230, 1),
+                            5%
+                        );
+                    }
+                }
+           }
+       }
+    }
+}

@@ -63,6 +63,7 @@ body {
 
 .container {
     text-align: center;
+    display: none;
 
     h1 {
         font-family: 'basic-sans', 'Basic Sans', sans-serif;
@@ -111,4 +112,8 @@ body {
            }
        }
     }
+}
+
+.show {
+    display: block!important;
 }
